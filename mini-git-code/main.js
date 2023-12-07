@@ -81,9 +81,23 @@ theFourthStep.style.width = '100%';
 theFourthStep.style.height = '50px';
 theFourthStep.style.borderRadius = '8px';
 theFourthStep.style.marginBottom = '5px';
-theFourthStep.innerText = `git remote add upstream https://github.com/${unit[0]}/${unit[1]}.git`;
+theFourthStep.innerText = `git remote add partner https://github.com/{PARTNER's USERNAME}/${unit[1]}.git`;
 
-// fifth step
+// fifth step - if you're making edits on your local machine
+const fifthStep = document.createElement('div');
+fifthStep.setAttribute('id', 'fifthStep');
+minigitwindow.appendChild(fifthStep);
+
+const theFifthStep = document.getElementById('fifthStep');
+theFifthStep.style.display = 'flex';
+theFifthStep.style.alignItems = 'center';
+theFifthStep.style.justifyContent = 'center';
+theFifthStep.style.backgroundColor = 'lightblue';
+theFifthStep.style.width = '100%';
+theFifthStep.style.height = '50px';
+theFifthStep.style.borderRadius = '8px';
+theFifthStep.style.marginBottom = '5px';
+theFifthStep.innerText = `If the edits are being made on your machine: git push origin main`;
 
 
 // Fork this repo to your repo
