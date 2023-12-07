@@ -24,12 +24,15 @@ firstStep.setAttribute('id', 'firstStep');
 minigitwindow.appendChild(firstStep);
 
 const theFirstStep = document.getElementById('firstStep');
+theFirstStep.style.display = 'flex';
+theFirstStep.style.alignItems = 'center';
+theFirstStep.style.justifyContent = 'center';
 theFirstStep.style.backgroundColor = 'lightblue';
 theFirstStep.style.width = '100%';
 theFirstStep.style.height = '50px';
 theFirstStep.style.borderRadius = '8px';
 theFirstStep.style.marginBottom = '5px';
-theFirstStep.innerText = 'Fork this repo';
+theFirstStep.innerText = 'Fork this repo to your own repo';
 
 
 // second step
@@ -45,8 +48,43 @@ theSecondStep.style.backgroundColor = 'lightblue';
 theSecondStep.style.width = '100%';
 theSecondStep.style.height = '50px';
 theSecondStep.style.borderRadius = '8px';
-theFirstStep.style.marginBottom = '5px';
-theSecondStep.innerText = `git clone https://github.com/${userName}/${unit[1]}.git`
+theSecondStep.style.marginBottom = '5px';
+theSecondStep.innerText = `git clone https://github.com/${userName}/${unit[1]}.git`;
+
+//third step
+const thirdStep = document.createElement('div');
+thirdStep.setAttribute('id', 'thirdStep');
+minigitwindow.appendChild(thirdStep);
+
+const theThirdStep = document.getElementById('thirdStep');
+theThirdStep.style.display = 'flex';
+theThirdStep.style.alignItems = 'center';
+theThirdStep.style.justifyContent = 'center';
+theThirdStep.style.backgroundColor = 'lightblue';
+theThirdStep.style.width = '100%';
+theThirdStep.style.height = '50px';
+theThirdStep.style.borderRadius = '8px';
+theThirdStep.style.marginBottom = '5px';
+theThirdStep.innerText = `git remote add upstream https://github.com/${unit[0]}/${unit[1]}.git`;
+
+//fourth step
+const fourthStep = document.createElement('div');
+fourthStep.setAttribute('id', 'fourthStep');
+minigitwindow.appendChild(fourthStep);
+
+const theFourthStep = document.getElementById('fourthStep');
+theFourthStep.style.display = 'flex';
+theFourthStep.style.alignItems = 'center';
+theFourthStep.style.justifyContent = 'center';
+theFourthStep.style.backgroundColor = 'lightblue';
+theFourthStep.style.width = '100%';
+theFourthStep.style.height = '50px';
+theFourthStep.style.borderRadius = '8px';
+theFourthStep.style.marginBottom = '5px';
+theFourthStep.innerText = `git remote add upstream https://github.com/${unit[0]}/${unit[1]}.git`;
+
+// fifth step
+
 
 // Fork this repo to your repo
 // Navigate to your own repo - Double check you're there! Copy the following into your command line 
