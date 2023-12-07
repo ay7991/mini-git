@@ -1,1 +1,14 @@
-
+{
+    "manifest_version": 3,
+    "name": "mini-git",
+    "version": "1.0",
+    "description": "This extension acts as git cheatsheet and shortcut for Codesmith unit challenges!",
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/CodesmithLLC/*"],
+            "js": ["./main.js"],
+            "css": ["styles.css"],
+            "html": ["index.html"]
+        }
+    ]
+}
