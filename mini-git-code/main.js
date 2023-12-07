@@ -28,5 +28,6 @@ theFirstStep.style.width = '100%';
 theFirstStep.style.height = '50px';
 theFirstStep.innerHTML = `git clone https://github.com/${userName}/${unit[1]}.git`
 
-
+// Fork this repo to your repo
+// Navigate to your own repo - Double check you're there! Copy the following into your command line 
 
